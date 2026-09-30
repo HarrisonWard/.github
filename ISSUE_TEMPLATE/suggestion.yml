@@ -1,0 +1,28 @@
+name: Suggestion
+description: Something you need that isn't here, or a better way to do what is
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve
+      description: The situation you're in, not just the fix you have in mind.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you'd like to see
+    validations:
+      required: true
+  - type: dropdown
+    id: size
+    attributes:
+      label: Company size you're thinking about
+      options:
+        - Under 50 people
+        - 50 to 500
+        - 500 plus
+        - Not size specific
+    validations:
+      required: false

@@ -1,0 +1,28 @@
+name: Correction
+description: Something here is wrong, outdated, or unclear
+labels: ["correction", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks. Being told I'm wrong is the fastest way this gets better. Please leave out anything client-identifiable.
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: File, section, or link
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What's wrong
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: What it should say
+      description: Sources welcome, especially for framework mappings.
+    validations:
+      required: false

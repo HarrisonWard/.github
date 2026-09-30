@@ -1,0 +1,36 @@
+name: Bug report
+description: A tool, script, or app here is broken or not doing what the docs say
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please redact hostnames, IPs, keys, and anything sensitive before posting.
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected to happen
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+      description: Error messages and logs help, redacted.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run ...
+        2. See ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+    validations:
+      required: false
